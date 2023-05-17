@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakharov</title>
+  <link rel="stylesheet" href="./sass/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="nav fixed">
+    <div class="nav__row">
+      <div class="logo small__title">portfolio</div>
+      <div class="nav__tools">
+        <div class="small__title changeLang" id="changeLang">RUS</div>
+        <div class="nav__slider small__title">
+          <img class="slider__theme" src="./img/moon-svgrepo-com.svg" alt="theme">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider" id="dark-mode-toggle"></span>
+          </label>
+        </div>
+      </div>
+      <ul class="nav__list">
+        <li class="small__title nav__item"><a href="#header" class="nav__link">my</a></li>
+        <li class="small__title nav__item"><a href="#about" class="nav__link">about</a></li>
+        <li class="small__title nav__item"><a href="#work" class="nav__link">experience</a></li>
+        <li class="small__title nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
+        <li class="small__title nav__item"><a href="#contact" class="nav__link">contact</a></li>
+      </ul>
+      <ul class="nav__list-rus none">
+        <li class="small__title nav__item"><a href="#header" class="nav__link">я</a></li>
+        <li class="small__title nav__item"><a href="#about" class="nav__link">о мне</a></li>
+        <li class="small__title nav__item"><a href="#work" class="nav__link">опыт</a></li>
+        <li class="small__title nav__item"><a href="#portfolio" class="nav__link">портфолио</a></li>
+        <li class="small__title nav__item"><a href="#contact" class="nav__link">контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="header" class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__description">
+          <div class="header__title">
+            <div>
+              <h1 class="title header__title__main">Front-End Developer</h1>
+              <div class="header__title__row">
+                <h2 class="subtitle header__subtitle">React, React-native</h2>
+                <img class="header__titile__img" src="./img/arm.png" alt="hello_arm">
+              </div>
+            </div>
+          </div>
+          <p class="text header__info">
+            Hi, I'm Vyacheslav Zakharov. A passionate Front-end Developer <br> based in Ravda, Bulgaria. 📍
+          </p>
+          <p class=" text header__info-rus none">
+            Привет, я Вячеслав Захаров. Увлеченный Front-end разработчик <br> базирующийся в Равде, Болгария. 📍
+          </p>
+          <ul class="social__links">
+            <li class="social"><a target="_blank" href="https://www.linkedin.com/in/vyacheslav-zakharov-769466243/"><img
+                  class="linkedin" src="./img/linkedin-svgrepo-com.svg" alt="LinedIn"></a>
+            </li>
+            <li class="social"><a target="_blank" href="https://github.com/Kritonmag"><img class="github"
+                  src="./img/github-rounded-svgrepo-com.svg" alt="GitHub"></a></li>
+          </ul>
+        </div>
+        <div class="header__img">
+          <img src="./img/photo.jpg" alt="my_photo">
+        </div>
+      </div>
+      <div class="header__skills skills">
+        <div class="skills__title small__title">Tech Skills</div>
+        <ul class="skills__list">
+          <li class="skill__item"><img src="./img/html-5-svgrepo-com.svg" title='HTML' alt=""></li>
+          <li class="skill__item"><img src="./img/css-3-svgrepo-com.svg" title='CSS' alt=""></li>
+          <li class="skill__item"><img src="./img/scss2-svgrepo-com.svg" title='SCSS' alt=""></li>
+          <li class="skill__item"><img src="./img/javascript-svgrepo-com.svg" title='JavaScript' alt=""></li>
+          <li class="skill__item"><img src="./img/typescript-icon-svgrepo-com.svg" title='TypeScript' alt=""></li>
+          <li class="skill__item"><img src="./img/react-1-logo-svgrepo-com.svg" title='REACT' alt=""></li>
+          <li class="skill__item"><img src="./img/webpack-svgrepo-com.svg" title='WebPack' alt=""></li>
+          <li class="skill__item"><img src="./img/git-svgrepo-com.svg" title='GIT' alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__info">
+        <h4 class="small__title about__title">About me</h4>
+        <h4 class="small__title about__title-rus none">Обо мне</h4>
+        <h3 class="subtitle about__subtitle">A dedicated Front-end Developer <br> based in Ravda, Bulgaria. 📍</h3>
+        <h3 class="subtitle about__subtitle-rus none"> Front-end разработчик<br> базирующийся в Равде,
+          Болгария. 📍</h3>
+
+        <p class="text about__descr">
+          As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS,
+          JavaScript, React,
+          Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user
+          experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized
+          code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in
+          collaborating with cross-functional teams to produce outstanding web applications.
+        </p>
+        <p class="text about__descr-rus none">
+          Как младший Front-End разработчик, я обладаю впечатляющим арсеналом навыков в HTML, CSS,
+          JavaScript, React,
+          Попутный ветер и SCSS. Я преуспеваю в разработке и обслуживании адаптивных веб-сайтов, которые обеспечивают
+          удобство работы пользователя
+          опыт. Мой опыт заключается в создании динамичных, привлекательных интерфейсов путем написания чистых и
+          оптимизированных текстов
+          код и использование передовых инструментов и методов разработки. Я также командный игрок, который преуспевает
+          в
+          сотрудничестве с кросс-функциональными командами для создания выдающихся веб-приложений
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="container work-eng">
+      <h2 class="work__h2 small__title">WORK EXPERIENCE</h2>
+      <div class="work__experience">
+        <div class="work__title subtitle">Kodeks, Saint Petersburg– Junior Front-End Developer</div>
+        <div class="work__date text">January 2022 - February 2023</div>
+        <div class="work__descr small__title">Job description and achievements:</div>
+        <ul class="work__list">
+          <li class="work__item text">1. Rewrote an old application from jQuery to React</li>
+          <li class="work__item text">2. Increased average website usage by 20% after redesign</li>
+          <li class="work__item text">3. Worked on the project with 4 front-end developers, 2 of whom
+            left one month before the release. Two of us had to take on a lot of
+            work, but we managed to complete everything within the set
+            deadlines.
+          </li>
+          <li class="work__item text">4. Mentored 2 students who later worked in our company on
+            different projects
+          </li>
+          <li class="work__item text">5. Devised and implemented a feature for an online store that
+            increased user engagement time by 50% and sales by 20%.
+          </li>
+        </ul>
+
+      </div>
+      <div class="work__experience">
+        <div class="work__title subtitle">Kodeks, Saint Petersburg– Intern Front-End Developer</div>
+        <div class="work__date text">July 2021 - January 2022</div>
+        <div class="work__descr small__title">Job description and achievements:</div>
+        <ul class="work__list">
+          <li class="work__item text">1. Created educational applications using JavaScript, TypeScript, and React.</li>
+          <li class="work__item text">2. Rewrote an old application from jQuery to React</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container work-rus none">
+      <h2 class="work__h2 small__title">ОПЫТ РАБОТЫ</h2>
+      <div class="work__experience">
+        <div class="work__title subtitle">Kodeks, Saint Petersburg– Junior Front-End Developer</div>
+        <div class="work__date text">Январь 2022 - Февраль 2023</div>
+        <div class="work__descr small__title">Описание работы и достижения:</div>
+        <ul class="work__list">
+          <li class="work__item text">1. Переписал старое приложение из jQuery в React</li>
+          <li class="work__item text">2. Увеличено среднее использование веб-сайта на 20% после редизайна</li>
+          <li class="work__item text">3. Работал над проектом с 4 front-end разработчиками, 2 из которых
+            ушел за месяц до релиза. Двоим из нас пришлось взвалить на себя много
+            работы, но нам удалось завершить все в нужный срок.
+          </li>
+          <li class="work__item text">4. Наставлял 2 студентов, которые позже работали в нашей компании над
+            различными проектами
+          </li>
+          <li class="work__item text">5. Разработал и внедрил функцию для интернет-магазина, которая
+            увеличила время взаимодействия с пользователями на 50% и продажи на 20%.
+          </li>
+        </ul>
+
+      </div>
+      <div class="work__experience">
+        <div class="work__title subtitle">Kodeks, Saint Petersburg– Intern Front-End Developer</div>
+        <div class="work__date text">Июль 2021 - январь 2022</div>
+        <div class="work__descr small__title">Описание работы и достижения:</div>
+        <ul class="work__list">
+          <li class="work__item text">1. Создавал образовательные приложения с использованием JavaScript, TypeScript и
+            React.</li>
+          <li class="work__item text">2. Переписал старое приложение из jQuery в React</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="portfolio__info">
+        <div class="portfolio__descr">
+          <div class="portfolio__title small__title">
+            PORTFOLIO
+          </div>
+          <div class="portfolio__subtitle subtitle">
+            Each project is a unique piece of development 🧩
+          </div>
+        </div>
+        <div class="portfolio__descr-rus none">
+          <div class="portfolio__title small__title">
+            ПОРТФОЛИО
+          </div>
+          <div class="portfolio__subtitle subtitle">
+            Каждый проект - это уникальная разработка 🧩
+          </div>
+        </div>
+        <ul class="portfolio__list">
+          <li class="project">
+            <div class="project__row">
+              <div class="project__img">
+                <a target="_blank" href="https://rent-car-git-master-kritonmag-gmailcom.vercel.app/">
+                  <img src="./img/car-rental-full.c58b37da333d73238fdd.webp" alt="">
+                </a>
+              </div>
+              <div class="project__descr">
+                <div class="project__info">
+                  <div class="project__title small__title">
+                    CAR RENTAL 🚗
+                  </div>
+                  <p class="project__text text">
+                    A car rental website is an online platform that allows users to rent cars for personal or business
+                    use.
+                    The website provides an interface for searching, comparing, and reserving cars.
+                  </p>
+                </div>
+
+                <div class="project__info-rus none">
+                  <div class="project__title small__title">
+                    Аренда машин 🚗
+                  </div>
+                  <p class="project__text text">
+                    Веб-сайт по прокату автомобилей - это онлайн-платформа, которая позволяет пользователям арендовать
+                    автомобили для личных или деловых целей
+                    использовать.
+                    Веб-сайт предоставляет интерфейс для поиска, сравнения и бронирования автомобилей. </p>
+                </div>
+
+                <div class="project__code">
+                  <div class="stacks">
+                    <div>React</div>
+                    <div>SCSS</div>
+                  </div>
+                  <div class="links">
+                    <a href="">
+                      Code
+                      <img src="./img/github-rounded-svgrepo-com.svg" alt="git">
+                    </a>
+                    <a href="">
+                      Live Demo
+                      <img src="./img/arrow-right-corner-281-svgrepo-com.svg" alt="Live Demo">
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-eng">
+        <div class="contact__title small__title">
+          CONTACT
+        </div>
+        <div class="contact__descr subtitle">
+          Don't be shy! Hit me up! 👇
+        </div>
+      </div>
+
+      <div class="contact-rus none">
+        <div class="contact__title small__title">
+          КОНТАКТЫ
+        </div>
+        <div class="contact__descr subtitle">
+          Не стесняйтесь! Напиши мне! 👇
+        </div>
+      </div>
+
+      <ul class="contact__row">
+        <li class="contact__item">
+          <div class="contact__item__img">
+            <img src="./img/location-pin-svgrepo-com.svg" alt="location">
+          </div>
+          <div class="contact__item__descr">
+            <div class="contact__item__title small__title">
+              Location
+            </div>
+            <div class="contact__item__subtitle text">
+              Ravda, Bulgaria
+            </div>
+          </div>
+        </li>
+        <li class="contact__item">
+          <div class="contact__item__img">
+            <img src="./img/whatsapp-color-svgrepo-com.svg" alt="WhatsApp">
+          </div>
+          <div class="contact__item__descr">
+            <div class="contact__item__title small__title">
+              WhatsApp
+            </div>
+            <div class="contact__item__subtitle text">
+              <a href="">+7 914 039 7579</a>
+            </div>
+          </div>
+        </li>
+        <li class="contact__item">
+          <div class="contact__item__img">
+            <img src="./img/telegram-svgrepo-com.svg" alt="Telegram">
+          </div>
+          <div class="contact__item__descr">
+            <div class="contact__item__title small__title">
+              Telegram
+            </div>
+            <div class="contact__item__subtitle text">
+              <a href="">sl_zakharov</a>
+            </div>
+          </div>
+        </li>
+        <li class="contact__item">
+          <div class="contact__item__img">
+            <img src="./img/mail-svgrepo-com.svg" alt="Mail">
+          </div>
+          <div class="contact__item__descr">
+            <div class="contact__item__title small__title">
+              Mail
+            </div>
+            <div class="contact__item__subtitle text">
+              <a href="">kriton.mag@gmail.com</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+  </footer>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
