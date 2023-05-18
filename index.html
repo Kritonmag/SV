@@ -16,27 +16,27 @@
 
   <nav class="nav fixed">
     <div class="nav__row">
-      <div class="logo small__title">portfolio</div>
       <div class="nav__tools">
-        <div class="small__title changeLang" id="changeLang">RUS</div>
-        <div class="nav__slider small__title">
-          <img class="slider__theme" src="./img/moon-svgrepo-com.svg" alt="theme">
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider" id="dark-mode-toggle"></span>
-          </label>
+        <div class="logo small__title"><a href="#header">Zakharov</a></div>
+        <div class="nav__tool">
+          <div class="small__title changeLang" id="changeLang">RUS</div>
+          <div class="nav__slider small__title">
+            <img class="slider__theme" src="./img/moon-svgrepo-com.svg" alt="theme">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider" id="dark-mode-toggle"></span>
+            </label>
+          </div>
         </div>
       </div>
       <ul class="nav__list">
-        <li class="small__title nav__item"><a href="#header" class="nav__link">my</a></li>
         <li class="small__title nav__item"><a href="#about" class="nav__link">about</a></li>
         <li class="small__title nav__item"><a href="#work" class="nav__link">experience</a></li>
         <li class="small__title nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
         <li class="small__title nav__item"><a href="#contact" class="nav__link">contact</a></li>
       </ul>
       <ul class="nav__list-rus none">
-        <li class="small__title nav__item"><a href="#header" class="nav__link">я</a></li>
-        <li class="small__title nav__item"><a href="#about" class="nav__link">о мне</a></li>
+        <li class="small__title nav__item"><a href="#about" class="nav__link">обо мне</a></li>
         <li class="small__title nav__item"><a href="#work" class="nav__link">опыт</a></li>
         <li class="small__title nav__item"><a href="#portfolio" class="nav__link">портфолио</a></li>
         <li class="small__title nav__item"><a href="#contact" class="nav__link">контакты</a></li>
@@ -61,7 +61,7 @@
             Hi, I'm Vyacheslav Zakharov. A passionate Front-end Developer <br> based in Ravda, Bulgaria. 📍
           </p>
           <p class=" text header__info-rus none">
-            Привет, я Вячеслав Захаров. Увлеченный Front-end разработчик <br> базирующийся в Равде, Болгария. 📍
+            Привет, я Вячеслав Захаров. Front-end разработчик <br> сейчас живу в Равде, Болгария. 📍
           </p>
           <ul class="social__links">
             <li class="social"><a target="_blank" href="https://www.linkedin.com/in/vyacheslav-zakharov-769466243/"><img
@@ -72,7 +72,7 @@
           </ul>
         </div>
         <div class="header__img">
-          <img src="./img/photo.jpg" alt="my_photo">
+          <img src="./img/photo_i.jpg" alt="my_photo">
         </div>
       </div>
       <div class="header__skills skills">
@@ -97,27 +97,24 @@
         <h4 class="small__title about__title">About me</h4>
         <h4 class="small__title about__title-rus none">Обо мне</h4>
         <h3 class="subtitle about__subtitle">A dedicated Front-end Developer <br> based in Ravda, Bulgaria. 📍</h3>
-        <h3 class="subtitle about__subtitle-rus none"> Front-end разработчик<br> базирующийся в Равде,
+        <h3 class="subtitle about__subtitle-rus none"> Front-end разработчик<br> сейчас проживаю в Равде,
           Болгария. 📍</h3>
 
         <p class="text about__descr">
-          As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS,
-          JavaScript, React,
-          Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user
-          experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized
-          code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in
-          collaborating with cross-functional teams to produce outstanding web applications.
+
+          As a Junior+ Front-End developer, I possess commercial experience in development using HTML/CSS/SCSS,
+          JavaScript/TypeScript, React/Redux. I also have experience in developing adaptive interfaces. I have a knack
+          for creating dynamic and visually appealing interfaces through writing clean and optimized code, utilizing
+          cutting-edge development tools and methods. Currently, I am diving into React Native as I find it intriguing
+          to build cross-platform applications.
         </p>
         <p class="text about__descr-rus none">
-          Как младший Front-End разработчик, я обладаю впечатляющим арсеналом навыков в HTML, CSS,
-          JavaScript, React,
-          Попутный ветер и SCSS. Я преуспеваю в разработке и обслуживании адаптивных веб-сайтов, которые обеспечивают
-          удобство работы пользователя
-          опыт. Мой опыт заключается в создании динамичных, привлекательных интерфейсов путем написания чистых и
-          оптимизированных текстов
-          код и использование передовых инструментов и методов разработки. Я также командный игрок, который преуспевает
-          в
-          сотрудничестве с кросс-функциональными командами для создания выдающихся веб-приложений
+          Как Junior+ Front-End разработчик, я имею комерческий опыт разработки с использованием HTML/CSS/SCSS,
+          JavaScript/TypeScript, React/Redux. Так же есть опыт разработки адамтивных интерфесов.
+          У меня есть опыт в создании динамичных, привлекательных интерфейсов путем написания чистого и
+          оптимизированного кода
+          и использование передовых инструментов и методов разработки. Сейчас я изучаю React Native, мне
+          интересно разрабатывать кросс-платформенные приложения.
         </p>
       </div>
     </div>
@@ -130,19 +127,19 @@
         <div class="work__title subtitle">Kodeks, Saint Petersburg– Junior Front-End Developer</div>
         <div class="work__date text">January 2022 - February 2023</div>
         <div class="work__descr small__title">Job description and achievements:</div>
+        <div class="text">
+          The main task was to rewrite the old jQuery-based documentation system to React/TypeScript. Simultaneously, I
+          maintained the existing application and added up-to-date information.
+        </div>
         <ul class="work__list">
-          <li class="work__item text">1. Rewrote an old application from jQuery to React</li>
-          <li class="work__item text">2. Increased average website usage by 20% after redesign</li>
-          <li class="work__item text">3. Worked on the project with 4 front-end developers, 2 of whom
-            left one month before the release. Two of us had to take on a lot of
-            work, but we managed to complete everything within the set
-            deadlines.
+          <li class="work__item text">1. Rewrote the old application from jQuery to React.</li>
+          <li class="work__item text">2. Improved the interface, making the application more user-friendly.</li>
+          <li class="work__item text">3. The project involved 2 Front-End developers, 1 Back-End developer, and a team
+            leader. At one point, my colleague went on vacation, and I had to handle all the sprint tasks alone. I
+            managed to cope with it successfully.
           </li>
-          <li class="work__item text">4. Mentored 2 students who later worked in our company on
-            different projects
-          </li>
-          <li class="work__item text">5. Devised and implemented a feature for an online store that
-            increased user engagement time by 50% and sales by 20%.
+          <li class="work__item text">4. Acted as a mentor for a Front-End developer intern. Later, he continued working
+            at the company.
           </li>
         </ul>
 
@@ -151,9 +148,15 @@
         <div class="work__title subtitle">Kodeks, Saint Petersburg– Intern Front-End Developer</div>
         <div class="work__date text">July 2021 - January 2022</div>
         <div class="work__descr small__title">Job description and achievements:</div>
+        <div class="text">
+          The company had a task to rewrite an old documentation system from jQuery to React. To achieve this, they
+          hired interns to train them in the necessary technologies.
+        </div>
         <ul class="work__list">
-          <li class="work__item text">1. Created educational applications using JavaScript, TypeScript, and React.</li>
-          <li class="work__item text">2. Rewrote an old application from jQuery to React</li>
+          <li class="work__item text">1. Over the course of 6 months, I studied HTML/CSS/SCSS, JavaScript/TypeScript,
+            React/Redux.</li>
+          <li class="work__item text">2. I created small applications using JavaScript, TypeScript, and React.</li>
+          <li class="work__item text">3. I also learned how to navigate and understand legacy code.</li>
         </ul>
       </div>
     </div>
@@ -163,18 +166,20 @@
         <div class="work__title subtitle">Kodeks, Saint Petersburg– Junior Front-End Developer</div>
         <div class="work__date text">Январь 2022 - Февраль 2023</div>
         <div class="work__descr small__title">Описание работы и достижения:</div>
+        <div class="text">
+          Главной задачей было переписать старую справочную систему с JQuery на React/TypeScript. Паралельно поддерживал
+          ткущее приложение и добавлял актуальную информацию.
+        </div>
         <ul class="work__list">
-          <li class="work__item text">1. Переписал старое приложение из jQuery в React</li>
-          <li class="work__item text">2. Увеличено среднее использование веб-сайта на 20% после редизайна</li>
-          <li class="work__item text">3. Работал над проектом с 4 front-end разработчиками, 2 из которых
-            ушел за месяц до релиза. Двоим из нас пришлось взвалить на себя много
-            работы, но нам удалось завершить все в нужный срок.
+          <li class="work__item text">1. Переписал старое приложение из jQuery в React.</li>
+          <li class="work__item text">2. Улучшил интрфейс, приложение стало более удобным для пользователей.</li>
+          <li class="work__item text">3. Над проeктом работало 2 Front-End разработчика, 1 back-End разработчик и
+            team-leader.
+            в какой-то момент мой коллега ушел в отпуск и мне пришлось одному закрывать все задачи по спринту, мне
+            удалось с этим справиться.
           </li>
-          <li class="work__item text">4. Наставлял 2 студентов, которые позже работали в нашей компании над
-            различными проектами
-          </li>
-          <li class="work__item text">5. Разработал и внедрил функцию для интернет-магазина, которая
-            увеличила время взаимодействия с пользователями на 50% и продажи на 20%.
+          <li class="work__item text">4. Был наставником для одного стажера Front-End разработчика. В последующем он
+            работал в этой компании.
           </li>
         </ul>
 
@@ -183,10 +188,17 @@
         <div class="work__title subtitle">Kodeks, Saint Petersburg– Intern Front-End Developer</div>
         <div class="work__date text">Июль 2021 - январь 2022</div>
         <div class="work__descr small__title">Описание работы и достижения:</div>
+        <div class="text">
+          У компании была задача переписать старую справочную систему с JQuery на React. Для этого они нанимали
+          стажеров, что
+          бы обучить их нужными технологиями.
+        </div>
         <ul class="work__list">
-          <li class="work__item text">1. Создавал образовательные приложения с использованием JavaScript, TypeScript и
-            React.</li>
-          <li class="work__item text">2. Переписал старое приложение из jQuery в React</li>
+          <li class="work__item text">1. В течении 6 месяцев изучал HTML/CSS/SCSS, JavaScript/TypeScript, React/Redux.
+          </li>
+          <li class="work__item text">2. Создавал пет приложения с использованием JavaScript, TypeScript и
+            React</li>
+          <li class="work__item text">3. Научился разбираться в legacy коде</li>
         </ul>
       </div>
     </div>
@@ -248,11 +260,11 @@
                     <div>SCSS</div>
                   </div>
                   <div class="links">
-                    <a href="">
+                    <a target="_blank" href="https://github.com/Kritonmag/Rent-car/tree/master">
                       Code
                       <img src="./img/github-rounded-svgrepo-com.svg" alt="git">
                     </a>
-                    <a href="">
+                    <a target="_blank" href="https://rent-car-git-master-kritonmag-gmailcom.vercel.app/">
                       Live Demo
                       <img src="./img/arrow-right-corner-281-svgrepo-com.svg" alt="Live Demo">
                     </a>

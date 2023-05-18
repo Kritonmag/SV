@@ -113,6 +113,12 @@ body {
 .nav__tools {
   display: flex;
   align-items: center;
+  width: 42.5%;
+  justify-content: space-between;
+}
+
+.nav__tool {
+  display: flex;
 }
 
 .changeLang {
@@ -213,8 +219,17 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 755px) {
+  .nav {
+    padding: 10px;
+  }
   .nav__row {
+    display: block;
     justify-content: space-around;
+  }
+  .nav__tools {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
   }
   .nav__list {
     margin: 0 auto;
@@ -320,7 +335,7 @@ input:checked + .slider:before {
 }
 @media (max-width: 755px) {
   .header {
-    padding: 180px 0 20px 0;
+    padding: 120px 0 20px 0;
   }
   .header__row {
     flex-wrap: wrap;
@@ -416,7 +431,7 @@ input:checked + .slider:before {
 
 @media (max-width: 755px) {
   .about {
-    padding: 185px 0 40px 0;
+    padding: 120px 0 20px 0;
   }
   .about__info {
     text-align: center;
@@ -455,7 +470,7 @@ input:checked + .slider:before {
 @media (max-width: 755px) {
   .work {
     text-align: center;
-    padding: 170px 0 40px 0;
+    padding: 120px 0 20px 0;
   }
   .work__list {
     text-align: left;
@@ -495,7 +510,7 @@ input:checked + .slider:before {
 
 @media (max-width: 755px) {
   .portfolio {
-    padding: 180px 0 40px 0;
+    padding: 120px 0 20px 0;
   }
 }
 .contact {
@@ -539,7 +554,7 @@ input:checked + .slider:before {
 @media (max-width: 755px) {
   .contact {
     text-align: center;
-    padding: 190px 0 40px 0;
+    padding: 120px 0 20px 0;
   }
   .contact__row {
     justify-content: center;

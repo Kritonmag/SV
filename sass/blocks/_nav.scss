@@ -19,6 +19,12 @@
 .nav__tools {
   display: flex;
   align-items: center;
+  width: 42.5%;
+  justify-content: space-between;
+}
+
+.nav__tool {
+  display: flex;
 }
 
 .changeLang {
@@ -122,8 +128,19 @@ input:checked+.slider:before {
 
 @media (max-width: 755px) {
 
+  .nav {
+    padding: 10px;
+  }
+
   .nav__row {
+    display: block;
     justify-content: space-around;
+  }
+
+  .nav__tools {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
   }
 
   .nav__list {
