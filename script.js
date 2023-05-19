@@ -2,7 +2,6 @@ const toggleButtonMode = document.getElementById('dark-mode-toggle');
 const toggleButtonLang = document.getElementById('changeLang');
 
 toggleButtonMode.addEventListener('click', toggleDarkMode);
-
 toggleButtonLang.addEventListener('click', toggleChangeLang);
 
 function toggleDarkMode() {
@@ -149,3 +148,58 @@ function toggleChangeLang() {
     contactRus.classList.remove('none');
   }
 }
+
+function smoothScroll(target) {
+  document.querySelector(target).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    let target = this.getAttribute('href');
+    smoothScroll(target);
+  });
+});
+
+const textList = [
+  'a Web Developer',
+  'a React Developer',
+  'a React-Native Dev'
+];
+
+let currentIndex = 0;
+let currentText = '';
+let deleting = false;
+
+function type() {
+  if (currentIndex < textList.length) {
+    if (!deleting && currentText === textList[currentIndex]) {
+      deleting = true;
+      setTimeout(type, 2000); // Ожидание 2 секунд перед удалением текста
+    } else if (deleting && currentText === '') {
+      deleting = false;
+      currentIndex++;
+      setTimeout(type, 500); // Ожидание 0.5 секунды перед вводом нового текста
+    } else if (deleting) {
+      currentText = currentText.slice(0, -1);
+      updateText();
+      setTimeout(type, 100); // Задержка 0.1 секунды перед удалением следующего символа
+    } else {
+      currentText = textList[currentIndex].substring(0, currentText.length + 1);
+      updateText();
+      setTimeout(type, 100); // Задержка 0.1 секунды перед вводом следующего символа
+    }
+  } else {
+    currentIndex = 0;
+    currentText = '';
+    type();
+  }
+}
+
+function updateText() {
+  document.getElementById('header__subtitle').textContent = currentText;
+}
+
+type();

@@ -260,6 +260,8 @@ input:checked + .slider:before {
 
 .header__description {
   width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__title {
@@ -273,6 +275,21 @@ input:checked + .slider:before {
   gap: 25px;
 }
 
+.header__subtitle-mobl {
+  display: none;
+}
+
+#header__subtitle {
+  animation: type-effect 2s steps(40, end) infinite;
+  white-space: nowrap;
+  height: 30px;
+}
+
+@keyframes type-effect {
+  from {
+    width: 0;
+  }
+}
 .header__titile__img {
   width: 13%;
   overflow: hidden;
@@ -280,10 +297,16 @@ input:checked + .slider:before {
 
 .header__info {
   margin-bottom: 30px;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 400;
 }
 
 .header__info-rus {
   margin-bottom: 30px;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 400;
 }
 
 .header__img {
@@ -347,6 +370,15 @@ input:checked + .slider:before {
     order: 2;
     text-align: center;
   }
+  .header__title__main {
+    margin-bottom: 15px;
+  }
+  #header__subtitle {
+    display: none;
+  }
+  .header__subtitle-mobl {
+    display: block;
+  }
   .header__title__row {
     display: block;
   }
@@ -379,7 +411,8 @@ input:checked + .slider:before {
   background-color: #9ab9d2;
   padding: 10px;
   border-radius: 15px;
-  width: 200px;
+  width: 180px;
+  margin-top: auto;
 }
 .social__links .linkedin {
   display: flex;
@@ -391,6 +424,11 @@ input:checked + .slider:before {
   height: 38px;
 }
 
+@media (max-width: 755px) {
+  .social__links {
+    margin: 0 auto;
+  }
+}
 .about {
   background-color: #fff;
   padding: 150px 0 40px 0;

@@ -5,7 +5,8 @@
   background-color: #9ab9d2;
   padding: 10px;
   border-radius: 15px;
-  width: 200px;
+  width: 180px;
+  margin-top: auto;
 
 
   .linkedin {
@@ -17,5 +18,11 @@
   .github {
     display: flex;
     height: 38px;
+  }
+}
+
+@media (max-width: 755px) {
+  .social__links {
+    margin: 0 auto;
   }
 }
