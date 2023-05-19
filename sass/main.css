@@ -141,6 +141,7 @@ body {
 
 .nav__item {
   border-bottom: 1px solid #000;
+  transition: 0.3s;
 }
 
 .nav__item:hover {
@@ -572,6 +573,12 @@ input:checked + .slider:before {
   padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.project-dark {
+  background-color: "#9ab9d2";
+  color: "#000";
 }
 
 .project__row {
@@ -583,7 +590,7 @@ input:checked + .slider:before {
   border-radius: 15px;
   height: 350px;
   overflow: hidden;
-  width: 150%;
+  width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .project__img img {
@@ -594,7 +601,7 @@ input:checked + .slider:before {
 }
 
 .project__descr {
-  height: 100%;
+  width: 100%;
 }
 
 .project__code {
@@ -623,6 +630,10 @@ input:checked + .slider:before {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px 15px;
   font-weight: 800;
+  transition: 0.5s;
+}
+.stacks div:hover {
+  background-color: #9ab9d2;
 }
 .stacks div:not(:last-child) {
   margin-right: 25px;
@@ -638,6 +649,10 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   margin-right: 25px;
+  transition: 0.5s;
+}
+.links a:hover {
+  color: #888888;
 }
 .links img {
   margin-left: 5px;

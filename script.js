@@ -17,7 +17,8 @@ function toggleDarkMode() {
   const footer = document.querySelector('.footer');
   const theme = document.querySelector('.slider__theme');
   const portfolio = document.querySelector('.portfolio');
-  const project = document.querySelector('.project');
+  const portfolioList = document.querySelector('.portfolio__list');
+  const project = portfolioList.querySelectorAll('.project')
   const portfolioInfo = document.querySelector('.portfolio__info');
 
   nav.classList.toggle('dark-mode');
@@ -40,8 +41,10 @@ function toggleDarkMode() {
     theme.setAttribute('src', "./img/sun-svgrepo-com.svg")
     portfolio.style.backgroundColor = '#222';
     portfolio.style.color = '#fff';
-    project.style.backgroundColor = '#9ab9d2';
-    project.style.color = '#000';
+    project.forEach((item) => {
+      item.style.backgroundColor = '#9ab9d2';
+      item.style.color = '#000';
+    })
     portfolioInfo.style.backgroundColor = '#222';
 
   } else {
@@ -61,8 +64,10 @@ function toggleDarkMode() {
     theme.setAttribute('src', "./img/moon-svgrepo-com.svg")
     portfolio.style.backgroundColor = '#fff';
     portfolio.style.color = '#000';
-    project.style.backgroundColor = '#fff';
-    project.style.color = '#000';
+    project.forEach((item) => {
+      item.style.backgroundColor = '#fff';
+      item.style.color = '#000';
+    })
     portfolioInfo.style.backgroundColor = '#e4d9d9';
   }
 }
@@ -83,8 +88,9 @@ function toggleChangeLang() {
   const workRus = document.querySelector('.work-rus');
   const portfolioEng = document.querySelector('.portfolio__descr');
   const portfolioRus = document.querySelector('.portfolio__descr-rus');
-  const projectEng = document.querySelector('.project__info');
-  const projectRus = document.querySelector('.project__info-rus');
+
+  const projectEng = document.querySelectorAll('.project__info');
+  const projectRus = document.querySelectorAll('.project__info-rus');
 
   const contactEng = document.querySelector('.contact-eng');
   const contactRus = document.querySelector('.contact-rus');
@@ -106,10 +112,16 @@ function toggleChangeLang() {
     workEng.classList.remove('none');
     portfolioRus.classList.add('none');
     portfolioEng.classList.remove('none');
-    projectRus.classList.add('none');
-    projectEng.classList.remove('none');
+    projectRus.forEach((item) => {
+      item.classList.add('none');
+    })
+    projectEng.forEach((item) => {
+      item.classList.remove('none');
+    })
     contactRus.classList.add('none');
     contactEng.classList.remove('none');
+
+
 
   } else {
     btnChangeLang.innerHTML = 'ENG'
@@ -127,8 +139,12 @@ function toggleChangeLang() {
     workRus.classList.remove('none');
     portfolioEng.classList.add('none');
     portfolioRus.classList.remove('none');
-    projectEng.classList.add('none');
-    projectRus.classList.remove('none');
+    projectRus.forEach((item) => {
+      item.classList.remove('none');
+    })
+    projectEng.forEach((item) => {
+      item.classList.add('none');
+    })
     contactEng.classList.add('none');
     contactRus.classList.remove('none');
   }
